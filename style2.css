@@ -1,0 +1,221 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #F8F9FA;
+}
+.logo{
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+}
+.sub-logo{
+  color: rgb(156,156,156);
+  font-size: 11.2px;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.diff-colorHeading{
+  color: #FA631C;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3em;
+    font-weight: bolder; 
+    font-size: 14px;
+}
+.item-list>ul>li:hover{
+  cursor: pointer;
+  color: #FA631C;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: max-content;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+.mySlides{
+  position: relative;
+}
+
+.mySlides>img{
+  width: 100vw;
+  height: 600px;
+}
+
+/* Caption text */
+.text{
+  position: relative;
+  color: #1072B2;
+  font-size: 40px;
+  bottom: 6px;
+  left: 14px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  height: .3em;
+  width: 2em;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* .active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.objective{
+  margin-top: 3em;
+  justify-content: flex;
+  align-items: center;
+  padding-left: 17.5em;
+}
+.description{
+  color: #9FA4AC;
+  font-size: .83rem;
+  width: 30em;
+  font-weight: lighter;
+  margin-bottom: 2em;
+}
+.description2{
+  color: #9FA4AC;
+  font-size: .83rem;
+  width: 50em;
+  font-weight: lighter;
+  margin-bottom: 2em;
+}
+.heading{
+  font-size: 28px;
+}
+.ver-line{
+    height: 21em;
+    width: 0;
+    border: .2px solid #9FA4AC;  
+}
+.hor-line{
+  height: 0;
+  width: 50em;
+  border: .2px solid #9FA4AC;
+  margin-left: -3em;
+  margin-bottom: 1em;
+}
+.statistics{
+  align-self: center;
+  width: 20em;
+  height: 10em;
+  justify-content: space-around;
+  background-color: #4444;
+}
